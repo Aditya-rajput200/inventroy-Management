@@ -28,6 +28,8 @@ function AddProduct() {
       });
 
       toast.success("Product has been created");
+    
+      e.target.reset();
     } catch (error) {
       toast.error("Product has not been created");
     }
@@ -65,7 +67,7 @@ function AddProduct() {
         </LabelInputContainer>
 
         <LabelInputContainer className="mb-8">
-          <Label htmlFor="url">URl</Label>
+          <Label htmlFor="url">Product Img URL</Label>
           <Input  type="text" name="url" id="url" placeholder="URL" required  />
         </LabelInputContainer>
 

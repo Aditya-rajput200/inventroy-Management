@@ -4,7 +4,7 @@ import React from 'react'
 import { useSession, signIn, signOut } from "next-auth/react"
 function NavBar() {
   const session= useSession()
-  console.log(session.data?.user?.email)
+ 
   
   return (
     <>
